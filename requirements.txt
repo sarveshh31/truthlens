@@ -1,0 +1,7 @@
+python-dotenv
+google-genai
+psycopg[binary]
+pgvector
+pypdf
+sentence-transformers
+langchain-text-splitters
