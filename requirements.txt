@@ -10,3 +10,4 @@ langchain-google-genai
 fastapi
 uvicorn[standard]
 langchain-groq
+pytest

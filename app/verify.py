@@ -53,7 +53,7 @@ def run_judge(prompt: str) -> VerificationResult:
     raise last_error
 
 
-LIST_PREFIX = re.compile(r"^\s*(?:[-*\u2022]+\s*)?(?:\d{1,2}[.)]\s*)?")
+LIST_PREFIX = re.compile(r"^\s*(?:[-*\u2022]+\s*)?(?:\d{1,2}[.)]\s+)?")
 
 
 def split_sentences(text: str) -> list[str]:
