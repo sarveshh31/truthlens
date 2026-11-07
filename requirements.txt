@@ -5,3 +5,7 @@ pgvector
 pypdf
 sentence-transformers
 langchain-text-splitters
+langgraph
+langchain-google-genai
+fastapi
+uvicorn[standard]
