@@ -31,10 +31,25 @@ flowchart TD
     V -->|rewrites used up| OUT
 ```
 
-## Run the API
+## Run with Docker (recommended)
 ```bash
-uvicorn app.api:app --port 8000
-# then open http://127.0.0.1:8000/docs
+cp .env.example .env        # then add your Groq (or Gemini) key and model name
+docker compose up -d --build
+# API docs: http://127.0.0.1:8000/docs
+```
+
+## Ingest a PDF
+```bash
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python scripts/init_db.py
+python scripts/ingest_pdf.py data/your_file.pdf
+```
+The PDF is not included in this repo. Download one yourself and put it in `data/`.
+
+## Tests
+```bash
+python -m pytest -q
 ```
 
 ## Stack
