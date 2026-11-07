@@ -6,16 +6,31 @@ from app import config
 
 
 @lru_cache(maxsize=4)
-def get_chat_model(temperature: float = 0.0) -> ChatGoogleGenerativeAI:
-    """LangChain chat model. Swapping providers later means changing only this function."""
+def get_chat_model(temperature: float = 0.0):
+    """The only place that knows which LLM provider is used."""
+    if config.LLM_PROVIDER == "groq":
+        if not config.GROQ_API_KEY or not config.GROQ_MODEL:
+            raise SystemExit("Set GROQ_API_KEY and GROQ_MODEL in .env")
+        from langchain_groq import ChatGroq
+
+        return ChatGroq(
+            model=config.GROQ_MODEL,
+            api_key=config.GROQ_API_KEY,
+            temperature=temperature,
+            max_retries=2,
+        )
+
     if not config.GEMINI_API_KEY or not config.GEMINI_MODEL:
         raise SystemExit("Set GEMINI_API_KEY and GEMINI_MODEL in .env")
+    from langchain_google_genai import ChatGoogleGenerativeAI
+
     return ChatGoogleGenerativeAI(
         model=config.GEMINI_MODEL.removeprefix("models/"),
         google_api_key=config.GEMINI_API_KEY,
         temperature=temperature,
-        max_retries=4,
+        max_retries=2,
     )
+
 
 
 def message_text(msg) -> str:
