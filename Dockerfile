@@ -19,7 +19,7 @@ USER app
 ENV HF_HOME=/home/app/.cache/huggingface
 
 # download the embedding model at build time so the container starts fast and works offline
-RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-small-en-v1.5')"
+RUN python -c "from sentence_transformers import SentenceTransformer, CrossEncoder; SentenceTransformer('BAAI/bge-small-en-v1.5'); CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')"
 ENV HF_HUB_OFFLINE=1
 
 EXPOSE 8000

@@ -14,3 +14,6 @@ DATABASE_URL = os.getenv(
 )
 EMBED_MODEL = os.getenv("EMBED_MODEL", "BAAI/bge-small-en-v1.5")
 EMBED_DIM = 384  # output size of bge-small
+RETRIEVAL_MODE = os.getenv("RETRIEVAL_MODE", "hybrid_rerank")  # vector | hybrid | hybrid_rerank
+RERANK_MODEL = os.getenv("RERANK_MODEL", "cross-encoder/ms-marco-MiniLM-L-6-v2")
+CANDIDATES = int(os.getenv("CANDIDATES", "20"))  # how many candidates hybrid search passes to the reranker
