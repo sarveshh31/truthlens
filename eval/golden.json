@@ -1,0 +1,339 @@
+[
+  {
+    "id": 1,
+    "question": "How much revenue did the Group report for 2025?",
+    "answerable": true,
+    "pages": [
+      32
+    ],
+    "keywords": [
+      "22,465"
+    ],
+    "answer": "EUR 22,465 million, up 1.7% year-on-year"
+  },
+  {
+    "id": 2,
+    "question": "What was the value of the WNS acquisition?",
+    "answerable": true,
+    "pages": [
+      9
+    ],
+    "keywords": [
+      "valued at $3.3 billion"
+    ],
+    "answer": "$3.3 billion"
+  },
+  {
+    "id": 3,
+    "question": "By what year does the company plan to be net zero across all its scopes?",
+    "answerable": true,
+    "pages": [
+      34,
+      35,
+      36
+    ],
+    "keywords": [],
+    "answer": "2040"
+  },
+  {
+    "id": 4,
+    "question": "What does the cybersecurity priority set out to protect?",
+    "answerable": true,
+    "pages": [
+      36
+    ],
+    "keywords": [
+      "Protect and secure data, infrastructure, and identity"
+    ],
+    "answer": "Data, infrastructure, and identity"
+  },
+  {
+    "id": 5,
+    "question": "What is the 2030 goal for reaching people in underserved communities through digital inclusion programmes?",
+    "answerable": true,
+    "pages": [
+      36
+    ],
+    "keywords": [
+      "Support 10 million beneficiaries in underserved"
+    ],
+    "answer": "10 million beneficiaries by 2030 (8,497,643 reached by end of 2025)"
+  },
+  {
+    "id": 6,
+    "question": "What operating margin did the Group achieve in 2025, as a percentage and in euros?",
+    "answerable": true,
+    "pages": [
+      32
+    ],
+    "keywords": [
+      "€2,983 million"
+    ],
+    "answer": "13.3% of revenues, EUR 2,983 million"
+  },
+  {
+    "id": 7,
+    "question": "How much organic free cash flow did the Group generate in 2025?",
+    "answerable": true,
+    "pages": [
+      32,
+      34
+    ],
+    "keywords": [
+      "€1,949 million"
+    ],
+    "answer": "EUR 1,949 million"
+  },
+  {
+    "id": 8,
+    "question": "How many people work at the sovereign cloud provider the Group bought last November?",
+    "answerable": true,
+    "pages": [
+      9
+    ],
+    "keywords": [
+      "1,600-strong team"
+    ],
+    "answer": "About 1,600 (Cloud4C)"
+  },
+  {
+    "id": 9,
+    "question": "How much dividend per share did the Group pay for 2025?",
+    "answerable": true,
+    "pages": [
+      33
+    ],
+    "keywords": [
+      "€3.40 per share"
+    ],
+    "answer": "EUR 3.40 per share (EUR 578 million in total)"
+  },
+  {
+    "id": 10,
+    "question": "What was the full-year book-to-bill ratio?",
+    "answerable": true,
+    "pages": [
+      33
+    ],
+    "keywords": [
+      "book-to-bill of 1.08"
+    ],
+    "answer": "1.08"
+  },
+  {
+    "id": 11,
+    "question": "Which industry sector accounts for the biggest share of the Group's revenues?",
+    "answerable": true,
+    "pages": [
+      33
+    ],
+    "keywords": [],
+    "answer": "Manufacturing, 25% of revenues"
+  },
+  {
+    "id": 12,
+    "question": "What share of the global workforce is made up of women?",
+    "answerable": true,
+    "pages": [
+      10,
+      34,
+      35,
+      36,
+      37
+    ],
+    "keywords": [],
+    "answer": "More than 40% (40.5% in 2025)"
+  },
+  {
+    "id": 13,
+    "question": "Which companies does the Group name as key partners across the AI value chain?",
+    "answerable": true,
+    "pages": [
+      14
+    ],
+    "keywords": [
+      "Mistral AI, OpenAI, Salesforce and Snowflake"
+    ],
+    "answer": "AWS, Google Cloud, Microsoft, Mistral AI, OpenAI, Salesforce and Snowflake"
+  },
+  {
+    "id": 14,
+    "question": "On average, how many learning hours did each employee complete in 2025?",
+    "answerable": true,
+    "pages": [
+      10,
+      35,
+      36
+    ],
+    "keywords": [],
+    "answer": "97 hours (97.2)"
+  },
+  {
+    "id": 15,
+    "question": "How many employees have been trained in Agentic AI?",
+    "answerable": true,
+    "pages": [
+      28,
+      29,
+      34,
+      35,
+      36
+    ],
+    "keywords": [
+      "194,000",
+      "194,775"
+    ],
+    "answer": "About 194,000 (194,775 active learners)"
+  },
+  {
+    "id": 16,
+    "question": "How many times did the Board of Directors meet during 2025?",
+    "answerable": true,
+    "pages": [
+      38
+    ],
+    "keywords": [
+      "met 11 times"
+    ],
+    "answer": "11 times, with 95% average attendance"
+  },
+  {
+    "id": 17,
+    "question": "What percentage of the Board members are independent?",
+    "answerable": true,
+    "pages": [
+      6,
+      38
+    ],
+    "keywords": [],
+    "answer": "83%"
+  },
+  {
+    "id": 18,
+    "question": "Which financial indicators determine the CEO's annual variable pay?",
+    "answerable": true,
+    "pages": [
+      39
+    ],
+    "keywords": [
+      "Group operating margin rate"
+    ],
+    "answer": "Group revenues, operating margin rate, organic free cash flow, net profit before taxes"
+  },
+  {
+    "id": 19,
+    "question": "By how much have Scope 1 and 2 emissions fallen compared with 2019?",
+    "answerable": true,
+    "pages": [
+      35
+    ],
+    "keywords": [
+      "94% reduction in Scope 1 and 2"
+    ],
+    "answer": "94%"
+  },
+  {
+    "id": 20,
+    "question": "How many employees does the Group have in Asia-Pacific?",
+    "answerable": true,
+    "pages": [
+      10
+    ],
+    "keywords": [
+      "258,000"
+    ],
+    "answer": "258,000"
+  },
+  {
+    "id": 21,
+    "question": "How many Applied Innovation Exchange sites are in the global network?",
+    "answerable": true,
+    "pages": [
+      10
+    ],
+    "keywords": [
+      "network of 21 Applied Innovation Exchanges"
+    ],
+    "answer": "21"
+  },
+  {
+    "id": 22,
+    "question": "How big is the global consumer products and retail industry?",
+    "answerable": true,
+    "pages": [
+      19
+    ],
+    "keywords": [
+      "over $30 trillion"
+    ],
+    "answer": "Over $30 trillion"
+  },
+  {
+    "id": 23,
+    "question": "What share of public sector organizations are already exploring or working on Gen AI?",
+    "answerable": true,
+    "pages": [
+      25
+    ],
+    "keywords": [
+      "Data foundations for government"
+    ],
+    "answer": "64% (Capgemini Research Institute, 2025)"
+  },
+  {
+    "id": 24,
+    "question": "What are the three dimensions of the Resonance AI framework?",
+    "answerable": true,
+    "pages": [
+      14
+    ],
+    "keywords": [
+      "AI essentials, AI readiness, and human-AI chemistry"
+    ],
+    "answer": "AI essentials, AI readiness, and human-AI chemistry"
+  },
+  {
+    "id": 25,
+    "question": "Which five technology trends does the Group highlight for 2026?",
+    "answerable": true,
+    "pages": [
+      12
+    ],
+    "keywords": [
+      "The borderless paradox of tech sovereignty"
+    ],
+    "answer": "The year of truth for AI; AI reshaping software development; Cloud 3.0; The rise of Intelligent Operations; The borderless paradox of tech sovereignty"
+  },
+  {
+    "id": 26,
+    "question": "What are the seven values at the heart of the Group's identity?",
+    "answerable": true,
+    "pages": [
+      37
+    ],
+    "keywords": [
+      "Freedom, Trust, Team Spirit, Honesty, Boldness, Modesty, and Fun"
+    ],
+    "answer": "Freedom, Trust, Team Spirit, Honesty, Boldness, Modesty, and Fun"
+  },
+  {
+    "id": 27,
+    "question": "What is the recipe for chocolate cake?",
+    "answerable": false
+  },
+  {
+    "id": 28,
+    "question": "Who won the 2022 FIFA World Cup?",
+    "answerable": false
+  },
+  {
+    "id": 29,
+    "question": "What was the Group's revenue in Japan in 2025?",
+    "answerable": false
+  },
+  {
+    "id": 30,
+    "question": "What is the annual salary of the Chief Executive Officer in euros?",
+    "answerable": false
+  }
+]

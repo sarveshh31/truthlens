@@ -1,0 +1,36 @@
+{
+  "generated": "2026-11-09T15:19:25",
+  "k": 5,
+  "answerable_questions": 26,
+  "results": {
+    "vector": {
+      "n": 26,
+      "hit@1": 0.8846153846153846,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "mrr": 0.9423076923076923,
+      "avg_latency_s": 0.146
+    },
+    "hybrid": {
+      "n": 26,
+      "hit@1": 0.8846153846153846,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "mrr": 0.935897435897436,
+      "avg_latency_s": 0.141
+    },
+    "hybrid_rerank": {
+      "n": 26,
+      "hit@1": 0.9615384615384616,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "mrr": 0.9807692307692307,
+      "avg_latency_s": 2.128
+    }
+  },
+  "misses": {
+    "vector": [],
+    "hybrid": [],
+    "hybrid_rerank": []
+  }
+}
