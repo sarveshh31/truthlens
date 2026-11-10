@@ -23,7 +23,7 @@ services:
     env_file: .env
     environment:
       # inside Docker the database host is the service name "db", not 127.0.0.1
-      DATABASE_URL: postgresql://truthlens:truthlens@db:5434/truthlens
+      DATABASE_URL: postgresql://truthlens:truthlens@db:5432/truthlens
     ports:
       - "127.0.0.1:8000:8000"
     depends_on:

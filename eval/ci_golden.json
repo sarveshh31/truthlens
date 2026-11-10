@@ -1,0 +1,16 @@
+[
+  {"id": 1, "question": "Who is the chief executive officer of Vantora Systems?", "answerable": true, "pages": [1], "keywords": ["Marta Quillen"]},
+  {"id": 2, "question": "In which year was Vantora founded?", "answerable": true, "pages": [1], "keywords": ["founded in 2009"]},
+  {"id": 3, "question": "How many people does Vantora employ?", "answerable": true, "pages": [1], "keywords": ["4,820"]},
+  {"id": 4, "question": "What was the revenue in 2025?", "answerable": true, "pages": [2], "keywords": ["812 million"]},
+  {"id": 5, "question": "What was the operating margin?", "answerable": true, "pages": [2], "keywords": ["14.2 percent"]},
+  {"id": 6, "question": "How much dividend per share did the board propose?", "answerable": true, "pages": [2], "keywords": ["0.65 euros"]},
+  {"id": 7, "question": "What does the StockPilot platform do?", "answerable": true, "pages": [3], "keywords": ["StockPilot"]},
+  {"id": 8, "question": "By how much did RouteLoom reduce fuel use for pilot customers?", "answerable": true, "pages": [3], "keywords": ["11 percent"]},
+  {"id": 9, "question": "By which year does the company aim for net zero emissions?", "answerable": true, "pages": [4], "keywords": ["net zero emissions by 2035"]},
+  {"id": 10, "question": "How many trees were planted in 2025?", "answerable": true, "pages": [4], "keywords": ["25,000 trees"]},
+  {"id": 11, "question": "What share of leadership roles do women hold?", "answerable": true, "pages": [5], "keywords": ["38 percent"]},
+  {"id": 12, "question": "How many days of paid leave do employees get?", "answerable": true, "pages": [5], "keywords": ["30 days"]},
+  {"id": 13, "question": "What share of revenue comes from the three largest customers?", "answerable": true, "pages": [6], "keywords": ["37 percent"]},
+  {"id": 14, "question": "Where does Vantora plan to open a new office in 2026?", "answerable": true, "pages": [6], "keywords": ["Brask"]}
+]

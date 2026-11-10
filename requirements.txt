@@ -12,4 +12,4 @@ uvicorn[standard]
 langchain-groq
 pytest
 rank-bm25
-mlflow
+reportlab
