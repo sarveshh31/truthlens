@@ -23,3 +23,8 @@ data/
 # Operating system files
 .DS_Store
 Thumbs.db
+
+mlflow.db
+mlruns/
+mlartifacts/
+eval/results/*.jsonl
