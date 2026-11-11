@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "run_name": "hybrid_rerank-expand",
+    "mode": "hybrid_rerank",
+    "k": 5,
+    "llm": "groq:openai/gpt-oss-120b",
+    "date": "2026-11-11",
+    "golden_sha": "71976ab84c",
+    "tasks_done": 40,
+    "tasks_total": 40,
+    "complete": true
+  },
+  "summary": {
+    "answerable_n": 26,
+    "unanswerable_n": 4,
+    "plant_n": 10,
+    "correct_rate": 0.9231,
+    "partial_rate": 0.0385,
+    "incorrect_rate": 0.0385,
+    "correct_rate_first_draft": 0.9231,
+    "false_refusal_rate": 0.0,
+    "refusal_accuracy": 1.0,
+    "retrieval_hit_rate": 1.0,
+    "first_flagged_rate": 0.0333,
+    "final_flagged_rate": 0.0,
+    "first_answers_with_flags": 0.0385,
+    "final_answers_with_flags": 0.0,
+    "mean_trust_first": 0.9615,
+    "mean_trust_final": 1.0,
+    "rewrite_rate": 0.0333,
+    "avg_rewrites": 0.0333,
+    "lie_detected_rate": 1.0,
+    "lie_removed_rate": 1.0,
+    "avg_latency_s": 34.684,
+    "p95_latency_s": 76.51
+  }
+}

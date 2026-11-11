@@ -1,13 +1,15 @@
+import os
 from typing import Optional, TypedDict
 
 from langgraph.graph import END, START, StateGraph
 
 from app.chat import get_chat_model, message_text
 from app.rag import build_prompt
-from app.retrieval import retrieve
+from app.retrieval import expand_page, retrieve
 from app.verify import NOT_FOUND, verify_answer
 
 MAX_REWRITES = 2
+EXPAND_PAGE = os.getenv("EXPAND_PAGE", "1") != "0"  # set EXPAND_PAGE=0 to switch it off for comparisons
 PLANTED_LIE = " The company was founded on Mars in 1850 and employs 3 million people."
 
 REWRITE_RULES = """You fix an answer so that every sentence is backed by the passages.
@@ -44,6 +46,8 @@ def _trace(state: GraphState, step: str, detail: str) -> list[dict]:
 
 def retrieve_node(state: GraphState):
     chunks = retrieve(state["question"], state.get("k", 5), state.get("filename"))
+    if EXPAND_PAGE:
+        chunks = expand_page(chunks)
     return {
         "chunks": chunks,
         "rewrites": 0,

@@ -101,3 +101,43 @@ def retrieve(question: str, k: int = 5, filename: str | None = None, mode: str |
     for item in top:
         item["score"] = 1.0 / (1.0 + math.exp(-item["rerank_score"]))  # squash to 0..1
     return top
+
+
+
+def merge_page_group(chunks, page_chunks, max_extra=6):
+    """Put the whole page of the top hit in reading order, then the other hits.
+
+    chunks: ranked retrieval results. page_chunks: every chunk on the top hit's page, ordered by chunk_index.
+    Chunks added this way carry expanded=True and score 0.0.
+    """
+    if not chunks or not page_chunks:
+        return chunks
+    by_id = {c["id"]: c for c in chunks}
+    group, extra = [], 0
+    for pc in page_chunks:
+        if pc["id"] in by_id:
+            group.append(by_id[pc["id"]])
+        elif extra < max_extra:
+            group.append(dict(pc, score=0.0, expanded=True))
+            extra += 1
+    in_group = {c["id"] for c in group}
+    return group + [c for c in chunks if c["id"] not in in_group]
+
+
+def expand_page(chunks, max_extra=6):
+    """Add the other chunks from the top hit's page, so lists that span several chunks come back whole."""
+    if not chunks:
+        return chunks
+    top = chunks[0]
+    with get_conn() as conn:
+        rows = conn.execute(
+            """
+            SELECT c.id, c.page, c.content, d.filename
+            FROM chunks c JOIN documents d ON d.id = c.document_id
+            WHERE c.document_id = (SELECT document_id FROM chunks WHERE id = %s) AND c.page = %s
+            ORDER BY c.chunk_index
+            """,
+            [top["id"], top["page"]],
+        ).fetchall()
+    page_chunks = [{"id": r[0], "page": r[1], "content": r[2], "filename": r[3]} for r in rows]
+    return merge_page_group(chunks, page_chunks, max_extra)
