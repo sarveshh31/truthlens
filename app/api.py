@@ -57,6 +57,7 @@ class SourceOut(BaseModel):
     filename: str
     score: float
     content: str
+    expanded: bool = False
 
 
 class AskResponse(BaseModel):
@@ -67,6 +68,8 @@ class AskResponse(BaseModel):
     refused: bool
     rewrites: int
     sentences: list[SentenceOut]
+    first_answer: str = ""
+    first_sentences: list[SentenceOut] = []
     sources: list[SourceOut]
     latency_ms: int
 
@@ -131,6 +134,8 @@ def ask(req: AskRequest):
         refused=v["refused"],
         rewrites=state["rewrites"],
         sentences=[SentenceOut(**s) for s in v["sentences"]],
+        first_answer=state.get("first_answer", ""),
+        first_sentences=[SentenceOut(**s) for s in state["first_verification"]["sentences"]],
         sources=[SourceOut(**c) for c in state["chunks"]],
         latency_ms=latency_ms,
     )
