@@ -15,15 +15,17 @@ Streamlit UI at http://127.0.0.1:8501 (started by `docker compose up -d --build`
 
 **Planted-lie demo.** A false sentence is injected into the first draft ("The company was founded on Mars in 1850 and employs 3 million people."). The verifier flags it red, the rewrite loop removes it, and trust goes from 50% to 100%.
 
-![Planted lie caught and removed](docs/demo-planted-lie.png)
+![Planted lie caught and removed](docs/demo-planted-lie.jpeg)
 
 **Normal answer.**
 
-![Normal answer, all sentences supported](docs/demo-normal.png)
+![Normal answer, all sentences supported](docs/demo-normal.jpeg)
 
-**Experiment tracking.** Baseline run vs. page-expansion run in MLflow:
+**Experiment tracking.** Two complete runs on the same golden set (same `golden_sha`), compared in MLflow. Left column: `hybrid_rerank-expand` (page expansion). Right column: `hybrid_rerank-verify` (baseline).
 
-![MLflow run comparison](docs/mlflow-compare.png)
+![MLflow metrics comparison](docs/mlflow-compare.jpeg)
+
+![MLflow parameters: identical settings in both runs](docs/mlflow-params.jpeg)
 
 ## Architecture
 
